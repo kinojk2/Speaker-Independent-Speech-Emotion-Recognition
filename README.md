@@ -1,4 +1,4 @@
-# Speaker_Independent_Speech_Emotion_Recognition
+# Speaker Independent Speech Emotion Recognition
 Source code from my Bachelor's degree final project entitled "Investigating Machine Learning and Deep Learning approaches to Speech Emotion Recognition"
 
 I am in the process of consolidating my data preprocessing and model training scripts into a modular form with a command-line interface, which would be more accessible and efficient to examine and utilise. The source code will be shared for reproducability, as evidence of my work and for educational and academic purposes. 
