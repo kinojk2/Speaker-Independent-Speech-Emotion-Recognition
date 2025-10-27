@@ -18,8 +18,11 @@ I concluded my project by creating an ensemble model which averaged the softmax 
 ### Ensemble model accuracies:
 
 EmoDB: 91%
+
 RAVDESS: 64%
+
 SAVEE: 65%
+
 IEMOCAP: 44% (The best performing non-ensemble model for IEMOCAP was trained on MFCCs and achieved 48.67%) 
 
 I compared my results with other Speaker Indendent studies. The EmoDB ensemble performs among the top performing speaker independent models, despite using a relatively simple and lightweight approach. I found only one work which outperformed my EmoDB ensemble, Amjad et al. 2021 achived 92.65% WAR, compared to my model's 91% WAR. Xu et al. 2022 also reported 90.61% Accuracy and Farooq et al 2020 reported 90.5%. 
