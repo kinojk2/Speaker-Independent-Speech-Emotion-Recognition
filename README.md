@@ -45,3 +45,35 @@ Fayek et al. 2017 (60.89% UAR)
 Latif, 2019 (60.23% UAR)
 Vladimir Chernykh, 2018 (54% Accuracy)
 ```
+
+# Instructions
+
+To test a model, you must first preprocess the dataset by running preprocess_dataset.py in the command line with the following four arguments:
+
+```
+First agument: The name of the dataset in lower case. Options are: emodb iemocap ravdess saveee
+Second argument: The sample rate. This must be entered as 16000 and not 16k 
+Third argument: An integer denoting duration in seconds to trim or pad each sample to. This is because all samples must be the same duration to be used as training data by tensorflow.
+Fourth argument: The Z_score normalisation flag. There is a normalisation layer in the model architecture, but this applies z_score normalisation per batch and after the length of each sample (and any other optional data preprocessing) has occured. To toggle this on or off enter y or n as the value for the fourth argument.
+
+Example: python dataset_preprocess.py emodb 16000 4 y
+```
+
+### Dependencies 
+The following python pacakages should be installed
+
+Data preprocessing:
+```
+pandas 2.2.3
+numpy 2.2.5
+librosa 0.11.0
+soundfile 0.13.1
+```
+
+Model training and evaluation:
+```
+tensorflow 2.19.0
+scikit-learn 1.7.0
+sklearn-preprocessing 0.1.0
+audiomentations 0.41.0
+```
