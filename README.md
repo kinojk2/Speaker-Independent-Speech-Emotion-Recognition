@@ -3,7 +3,7 @@ Source code from my Bachelor's degree final project entitled "Investigating Mach
 
 I am in the process of consolidating my data preprocessing and model training scripts into a modular form with a command-line interface, which would be more accessible and efficient to examine and utilise. The source code will be shared for reproducability, as evidence of my work and for educational and academic purposes. 
 
-Project Summary: 
+# Project Summary: 
 
 The project tested a traditional ML approach, whereby handcrafted features extracted from OpenSMILE were used to train a logistic regression classifier. This was followed by a Deep Learning (DL) approach which utilised Convolutional Neural Networks (CNN) trained on three data representations separately, the raw waveforms, Mel Spectrograms, and MFCCS.
 Results were compared across the four datasets, between the CNN models and the different data representations, and between the CNN models and traditional ML classifier.
@@ -15,7 +15,7 @@ My results support the view that DL without leveraging domain knowledge via hand
 
 I concluded my project by creating an ensemble model which averaged the softmax probabilities per class from the three separate CNN models trained on different data representations. With exception to one dataset (IEMOCAP) this improved classification accuracy. 
 
-Ensemble model accuracies:
+###Ensemble model accuracies:
 
 EmoDB: 91%
 RAVDESS: 64%
