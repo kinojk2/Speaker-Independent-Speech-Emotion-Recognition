@@ -9,7 +9,7 @@ The project tested a traditional ML approach, whereby handcrafted features extra
 Results were compared across the four datasets, between the CNN models and the different data representations, and between the CNN models and traditional ML classifier.
 Most of the time was spent experimenting with data preprocessing optimisations, and neural network architecture optimisations for the CNNs, and after multiple iterations the DL approach outperformed the traditional ML approach which leveraged handcrafted features. 
 
-Four of the main datasets for SER were used, EmoDB, IEMOCAP, SAVEE, and RAVDESS, and the work adopted a speaker independent approach whereby the entirety of at least one speaker's speech samples were excluded from taining and used exclusively for testing, in this way there is no bleeding of speaker-specific qualities into the training data. This approach consistently proves to be more challenging for ML models, and it is thought that this improves model generalisability.
+Four of the main datasets for SER were used, EmoDB, IEMOCAP, SAVEE, and RAVDESS, and the work adopted a speaker independent approach whereby the entirety of at least one speaker's speech samples were excluded from training and used exclusively for testing, in this way there is no bleeding of speaker-specific qualities into the training data. This approach consistently proves to be more challenging for ML models, and it is thought that this improves model generalisability.
 
 My results support the view that DL without leveraging domain knowledge via handcrafted features achieves superior results on speaker independent speech emotion recognition. 
 
@@ -51,7 +51,7 @@ Vladimir Chernykh, 2018 (54% Accuracy)
 To test a model, you must first preprocess the dataset by running preprocess_dataset.py in the command line with the following four arguments:
 
 ```
-First agument: The name of the dataset in lower case. Options are: emodb iemocap ravdess saveee
+First argument: The name of the dataset in lower case. Options are: emodb iemocap ravdess saveee
 Second argument: The sample rate. This must be entered as 16000 and not 16k 
 Third argument: An integer denoting duration in seconds to trim or pad each sample to. This is because all samples must be the same duration to be used as training data by tensorflow.
 Fourth argument: The Z_score normalisation flag. There is a normalisation layer in the model architecture, but this applies z_score normalisation per batch and after the length of each sample (and any other optional data preprocessing) has occured. To toggle this on or off enter y or n as the value for the fourth argument.
@@ -60,7 +60,7 @@ Example: python dataset_preprocess.py emodb 16000 4 y
 ```
 
 ### Dependencies 
-The following python pacakages should be installed
+The following python packages should be installed
 
 Data preprocessing:
 ```
