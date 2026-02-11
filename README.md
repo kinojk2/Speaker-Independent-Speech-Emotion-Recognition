@@ -1,7 +1,6 @@
 # Speaker-Independent Speech Emotion Recognition
-Source code for my Bachelor's of Science final project entitled "Investigating Machine Learning and Deep Learning approaches to Speech Emotion Recognition".
-
-I am in the process of consolidating my data preprocessing and model training scripts into a modular form with a command-line interface, which would be more accessible and efficient to examine and utilise. The source code will be shared for reproducibility, as evidence of my work and for educational and academic purposes. 
+My Bachelor's of Science Computing & IT final project was entitled "Investigating Machine Learning and Deep Learning approaches to Speech Emotion Recognition".
+Uploaded here is an updated version of said project, designed to be more accessible, maintainable, and for for reproducibility. 
 
 # Project Summary 
 
